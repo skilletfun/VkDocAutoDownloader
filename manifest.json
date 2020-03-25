@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "VK Document AutoDownloader",
+    "description": "This extension will download documents from vk automately",
+    "version": "1.0",
+    "content_scripts": [
+        {
+          "matches": [ "*://vk.com/*" ],
+          "js": [ "popup.js" ]
+        }
+      ],
+    "browser_action": {
+        "default_icon": "logo.png",
+        "default_popup": "popup.html"
+    },
+
+    "permissions": [
+        "activeTab"
+    ]
+}

@@ -1,0 +1,1 @@
+location.href="javascript:saveDoc(); void 0";
